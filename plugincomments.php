@@ -11,8 +11,10 @@ Description: Un plugin permettant de racourcir les commentaires trop long
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
 add_action('plugins_loaded', 'plugin_load_textdomain');
-function plugin_load_textdomain() {
-	load_plugin_textdomain( 'plugincomments_textdomain', false, plugins_url('plugincomments_textdomain-fr_FR.mo' , __FILE__ ) . '/lang/' );
+
+function plugin_load_textdomain()
+{
+	load_plugin_textdomain( 'plugincomments_textdomain', false, plugins_url('plugincomments_textdomain-fr_FR.mo' , __FILE__ ) . '/languages/' );
 }
 
 
