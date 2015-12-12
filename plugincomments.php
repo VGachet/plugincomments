@@ -10,6 +10,8 @@ Description: Un plugin permettant de racourcir les commentaires trop long
 
 defined( 'ABSPATH' ) or die( 'No script kiddies please!' );
 
+
+/*Le lien de traduction ne fonctionne pas; il me semble pourtant bon...*/
 add_action('plugins_loaded', 'plugin_load_textdomain');
 
 function plugin_load_textdomain()
